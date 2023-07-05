@@ -1,0 +1,188 @@
+content {
+    margin-bottom: 1rem;
+}
+
+content article:first-of-type {
+    margin-top: 0.1rem;
+}
+
+content article p {
+    padding: 0.2rem 1.5rem 0.5rem;
+}
+
+content article>p:first-of-type {
+    padding: 0.3rem 1.5rem 0.5rem;
+}
+
+content pullquote {
+    grid-area: pullquote;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0 1.25rem;
+}
+
+pullquote span {
+    color: #df0f1c;
+    font-size: calc(22px + 0.75vw);
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+pullquote span.credit {
+    font-size: calc(14px + 0.75vw);
+    margin-top: 0.2rem;
+}
+
+content article>ul {
+    padding: 0 1.5rem;
+}
+
+content a {
+    color: var(--body-text-color);
+}
+
+content a.discreet {
+    text-decoration: none;
+    color: var(--ng-info-grey);
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 769px) {
+    /* content {
+        display: grid;
+        grid-template-areas:
+            "article";
+        grid-template-rows: 1fr;
+        grid-template-columns: auto;
+    } */
+
+    content article p {
+        padding: 0.2rem 0 0.3rem;
+    }
+
+    content article>p:first-of-type {
+        padding: 0.3rem 0 0.6rem;
+    }
+
+    content article>p.solo {
+        padding: 0.2rem 0 1.8rem;
+    }
+
+    content pullquote {
+        grid-area: pullquote;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        margin-right: 2rem;
+        padding: 0;
+    }
+
+    pullquote span {
+        color: #df0f1c;
+        font-size: calc(22px + 0.75vw);
+        letter-spacing: 0.1rem;
+        text-align: right;
+        margin-bottom: 0.5rem;
+    }
+
+    pullquote span.credit {
+        font-size: calc(10px + 0.75vw);
+        margin-top: 0.2rem;
+    }
+
+    .info {
+        font-size: calc(11px + 0.5vw);
+        color: var(--ng-info-grey);
+        padding: 0.6rem 0 0.5rem;
+    }
+
+    .info.closer-to-top {
+        font-size: calc(11px + 0.5vw);
+        color: var(--ng-info-grey);
+        padding: 0.3rem 0 0.5rem;
+    }
+}
+
+/* Overriding Danamojo style with NG style */
+#danamojo-widget-container a {
+    color: var(--ng-perfmap-darkgrey) !important;
+}
+
+#ngoContentContainer .btn-group,
+#ngoContentContainer .btn-group-vertical {
+    display: none !important;
+}
+
+#ngoContentContainer #grid_view .widget-item-dm.col-sm-4 {
+    width: 42% !important;
+}
+
+.cost-box .cost-box-rs span {
+    color: var(--ng-red) !important;
+}
+
+#ngoContentContainer .cost_inr span {
+    color: var(--ng-red) !important;
+}
+
+#ngoContentContainer .cost_inr.inr_fade_grid_cls {
+    color: var(--ng-red) !important;
+}
+
+#ngoContentContainer p span {
+    color: var(--ng-perfmap-darkgrey) !important;
+}
+
+#ngoContentContainer .btn-primary {
+    background-color: var(--ng-red) !important;
+    /* border-color: var(--ng-timeline-red) !important; */
+    border: 0 !important;
+}
+
+#ngoContentContainer .nav>li>a {
+    background-color: var(--ng-red) !important;
+}
+
+#ngoContentContainer .blue_css {
+    color: var(--ng-red) !important;
+}
+
+#ngoContentContainer .quick-upi-btn {
+    display: none !important;
+    background-color: var(--ng-red) !important;
+    border: 0 !important;
+}
+
+/* #ngoContentContainer .list-group.dm-arrow-tab-group .dm-arrow-tab-box a.list-group-item.active {
+    background-color: var(--ng-red) !important;
+    border-color: var(--ng-timeline-red) !important;
+} */
+
+/* #ngoContentContainer .list-group.dm-arrow-tab-group .dm-arrow-tab-box:hover {
+    background-color: var(--ng-red) !important;
+    border-color: var(--ng-timeline-red) !important;
+} */
+
+#ngoContentContainer .nav>li.disabled>a {
+    color: #333 !important;
+}
+
+#ngoContentContainer #donorInfo label,
+#ngoContentContainer #productoverlay label {
+    color: #333 !important;
+}
+
+#inner-modal #header {
+    background-color: var(--ng-red) !important;
+}
+
+#ngoContentContainer .note-css i {
+    color: var(--ng-red) !important;
+}
+
+.mobile-padding span {
+    color: var(--ng-red) !important;
+}

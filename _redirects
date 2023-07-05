@@ -1,0 +1,84 @@
+# Redirects from what the browser requests to what we serve
+/artists/surupa/*  /surupa.html 301
+/4artists/surupa/* /surupa.html 301
+/artists/bijayini/*  /bijayini.html 301
+/4artists/bijoyini/* /bijayini.html 301
+/artists/rising/*  /pavithra.html 301
+/4artists/rising/rising.htm  /pavithra.html 301
+/artists/ensemble/ensemble.htm /ensemble.html 301
+/4artists/ensemble/ensemble.htm /ensemble.html 301
+/artists/protima/* /protima.html 301
+/4artists/protima/* /protima.html 301
+
+
+/village/spaces/guest.htm /supportingartists.html 301
+/village/spaces/*    /space.html 301
+/5village/spaces/*    /space.html 301
+/village/trustees/* /board.html 301
+/5village/trustees/* /board.html 301
+/village/sponsors/* /support.html 301
+/5village/sponsors/* /support.html 301
+/village/friends/* /board.html 301
+/5village/friends/* /board.html 301
+/village/holistic/* /space.html 301
+/5village/holistic/* /space.html 301
+
+
+/expression/bnatyam/* /gurukula.html 301
+/expression/bnatyam/bnatyam.htm /gurukula.html 301
+/6expression/bnatyam/* /gurukula.html 301
+/6expression/bnatyam/bnatyam.htm /gurukula.html 301
+/expression/kuchipudi/* /gurukula.html 301
+/expression/kuchipudi/kuchipudi.htm /gurukula.html 301
+/6expression/kuchipudi/* /gurukula.html 301
+/6expression/kuchipudi/kuchipudi.htm /gurukula.html 301
+/expression/kathakali/* /gurukula.html 301
+/expression/kathakali/kathakali.htm /gurukula.html 301
+/6expression/kathakali/* /gurukula.html 301
+/6expression/kathakali/kathakali.htm /gurukula.html 301
+/expression/odissi/*   /gurukula.html 301
+/expression/odissi/odissi.htm   /gurukula.html 301
+/6expression/odissi/*   /gurukula.html 301
+/6expression/odissi/odissi.htm   /gurukula.html 301
+/expression/manipuri/* /gurukula.html 301
+/expression/manipuri/manipuri.htm /gurukula.html 301
+/6expression/manipuri/* /gurukula.html 301
+/6expression/manipuri/manipuri.htm /gurukula.html 301
+/expression/mohini/* /gurukula.html 301
+/expression/mohini/mohini.htm /gurukula.html 301
+/6expression/mohini/* /gurukula.html 301
+/6expression/mohini/mohini.htm /gurukula.html 301
+
+
+/contact/* /thingstodo.html#timings 301
+
+
+/soul/gurukul/* /gurukula.html 301
+/1soul/gurukul/* /gurukula.html 301
+/soul/dream/dream.htm /vision.html 301
+/1soul/dream/dream.htm /vision.html 301
+/soul/future/* /future.html 301
+/1soul/future/* /future.html 301
+/soul/philosophy/philosophy.htm /vision.html 301
+/1soul/philosophy/philosophy.htm /vision.html 301
+
+
+/wisdom/apply/*    /danceprof.html 301
+/2wisdom/apply/*    /danceprof.html 301
+/wisdom/prog/*    /thingstodo.html 301
+/2wisdom/prog/*    /thingstodo.html 301
+/wisdom/workshops/* /danceunlimited.html 301
+/2wisdom/workshops/* /danceunlimited.html 301
+/wisdom/gyan/* /vision.html 301
+/2wisdom/gyan/* /vision.html 301
+/wisdom/training/* /danceprof.html 301
+/2wisdom/training/* /danceprof.html 301
+
+/passion/habba/* /popularisingarts.html#vasant 301
+/3passion/habba/* /popularisingarts.html#vasant 301
+/passion/perform/* /repertoire.html 301
+/3passion/perform/* /repertoire.html 301
+
+
+/reviews/* /press.html 301
+

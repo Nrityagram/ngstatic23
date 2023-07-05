@@ -1,0 +1,145 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700&display=swap");
+
+:root {
+    --navbar-background: rgba(0, 0, 0, 0.98);
+    --navbar-background_accent: rgba(100, 100, 100, 1);
+    --offwhite: #e6e6e6;
+    --ng-red: rgb(210, 31, 38);
+    --ng-red-accent: rgb(219, 61, 69);
+    --ng-timeline-red: rgb(177, 36, 28);
+    --ng-timeline-darkgrey: #a9a9a9;
+    --ng-perfmap-darkgrey: #474747;
+    --ng-info-grey: #a5a5a5;
+    --ng-light-grey: #cecece;
+    --ng-light-red: rgb(224, 129, 134);
+    --ng-very-light-grey: #c0c0c0;
+    --body-text-color: #1b1b1b;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*::-moz-selection {
+    background: rgba(0, 0, 0, 0);
+}
+
+*::selection {
+    background: rgba(0, 0, 0, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    /* list-style: disc inside none; */
+}
+
+i {
+    color: var(--ng-perfmap-darkgrey);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    background: #fff;
+    font-family: 'EB Garamond', serif;
+    font-size: calc(16px + 0.5vw);
+    font-weight: 400;
+    color: var(--body-text-color);
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.ngtitle {
+    color: var(--ng-red);
+    font-size: calc(22px + 0.75vw);
+    /* padding: 0.6rem 1.5rem 0.3rem; */
+    padding: 0.5rem 1.5rem 0.1rem;
+    letter-spacing: 0.1rem;
+}
+
+.ngtitle.caption-above {
+    padding: 0 1.5rem !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.center-txt {
+    text-align: center;
+}
+
+.info {
+    font-size: calc(14px + 0.5vw);
+    color: var(--ng-info-grey);
+    padding: 0.3rem 1.5rem;
+}
+
+.ngbutton {
+    -moz-box-shadow: inset 0px 1px 0px 0px #e09177;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #e09177;
+    box-shadow: inset 0px 1px 0px 0px #e09177;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ee3502), color-stop(1, #d92b09));
+    background: -moz-linear-gradient(top, #ee3502 5%, #d92b09 100%);
+    background: -webkit-linear-gradient(top, #ee3502 5%, #d92b09 100%);
+    background: -o-linear-gradient(top, #ee3502 5%, #d92b09 100%);
+    background: -ms-linear-gradient(top, #ee3502 5%, #d92b09 100%);
+    background: linear-gradient(to bottom, #ee3502 5%, #d92b09 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee3502', endColorstr='#d92b09', GradientType=0);
+    background-color: #ee3502;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    min-width: 48%;
+    font-size: calc(14px + 0.5vw);
+    padding: 0.6rem 0.8rem;
+    text-decoration: none;
+}
+
+.ngbutton.large {
+    padding: 0.5rem 5rem;
+}
+
+.ngbutton:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d92b09), color-stop(1, #ee3502));
+    background: -moz-linear-gradient(top, #d92b09 5%, #ee3502 100%);
+    background: -webkit-linear-gradient(top, #d92b09 5%, #ee3502 100%);
+    background: -o-linear-gradient(top, #d92b09 5%, #ee3502 100%);
+    background: -ms-linear-gradient(top, #d92b09 5%, #ee3502 100%);
+    background: linear-gradient(to bottom, #d92b09 5%, #ee3502 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d92b09', endColorstr='#ee3502', GradientType=0);
+    background-color: #d92b09;
+}
+
+.ngbutton:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 769px) {
+    .ngbutton {
+        min-width: 33%;
+        font-size: calc(12px + 0.5vw);
+    }
+}

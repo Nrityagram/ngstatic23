@@ -1,0 +1,350 @@
+@import url("./ng-const.css");
+
+
+.is-mobile {
+  display: block;
+}
+
+.is-desk {
+  display: none;
+}
+
+.socialmedia-sidebar {
+  display: none;
+}
+
+.larger-font {
+  font-size: larger;
+  margin-top: -0.18em;
+}
+
+a.bodytxt {
+  text-decoration: underline;
+  text-decoration-color: var(--ng-very-light-grey);
+}
+
+
+.container {
+  position: relative;
+  color: var(--body-text-color);
+  background-color: #fff;
+  display: grid;
+  grid-template-areas: "content""footer";
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  /* Adding height and overflow will stop 
+  window.scroll jquery function from working */
+  /* height: 100%; */
+  /* overflow: auto; */
+}
+
+.container.scroll-lock {
+  height: 100%;
+  overflow: auto;
+}
+
+content {
+  grid-area: content;
+  padding: 4rem 0;
+  margin: auto;
+}
+
+content .photowrapper {
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem;
+}
+
+content .photowrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  overflow-y: hidden;
+}
+
+content article.narrow {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+article p {
+  line-height: 1.6rem;
+  padding: 0.5rem 0;
+}
+
+content iframe {
+  padding: 4rem 0 0;
+  width: 100%;
+  height: 500px;
+}
+
+content ul {
+  padding: 0.2rem 0;
+  margin: 0 1.25rem;
+  /* list-style: disc inside none; */
+}
+
+content ul.no-bullets {
+  list-style-type: none;
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: 0.45fr 70px 1fr 50px 38px 50px;
+  background-color: var(--ng-red);
+  color: white;
+}
+
+footer>div {
+  text-align: center;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+footer>div:first-of-type {
+  background-color: var(--ng-red-accent);
+  padding: 0.15rem 1.25rem;
+  height: 90%;
+  line-height: 1.3rem;
+}
+
+footer>div:nth-of-type(2) {
+  border-bottom: 1px lightgrey solid;
+  font-weight: 200;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+footer>div:nth-of-type(2)>span a {
+  color: #fff;
+}
+
+footer>div:nth-of-type(2)>span:nth-child(2) {
+  padding-top: 0.75rem;
+}
+
+footer>div.address {
+  padding: 0.5rem 28px;
+  flex-direction: column;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+footer>div.address p {
+  padding: 0;
+  margin: 0.3rem 0;
+  color: var(--offwhite);
+}
+
+footer>div.sm-icons {
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer>div.sm-icons img.icon-img {
+  width: 20px;
+}
+
+.pay-pentacle,
+.pay-wiretransfer {
+  padding: 3rem 1rem;
+}
+
+.pay-direct {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.pay-direct a {
+  color: var(--ng-red);
+}
+
+.decoratelink {
+  background-color: var(--ng-red);
+  color: #fff;
+  padding: 0 0.3rem;
+}
+
+.copyright-credits {
+  display: flex;
+  flex-direction: column;
+  color: var(--offwhite);
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.copyright-credits.smaller {
+  font-size: 0.68rem;
+  line-height: 1rem;
+  color: var(--ng-light-red);
+}
+
+.copyright-credits.smaller .is-mobile {
+  font-size: 0.62rem;
+}
+
+.copyright-credits p:first-of-type {
+  margin: 0.4rem 0 0;
+}
+
+.copyright-credits p:last-of-type {
+  margin: 0 0 0.4rem;
+}
+
+.copyright-credits a {
+  color: var(--offwhite);
+}
+
+
+
+/* Desktop Media Query */
+@media screen and (min-width: 769px) {
+  .container {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .is-mobile {
+    display: none;
+  }
+
+  .is-desk {
+    display: block;
+  }
+
+  footer {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 0.45fr 50px 1fr 55px 50px;
+    background-color: var(--ng-red);
+    color: white;
+  }
+
+  footer>div:first-of-type {
+    font-size: 1.3em;
+    font-weight: 100;
+    height: 100%;
+    line-height: 1.4rem;
+  }
+
+  footer>div:nth-of-type(2) {
+    border-bottom: 1px lightgrey solid;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* justify-content: center; */
+    width: 45vw;
+    margin: 0 auto;
+  }
+
+  footer>div:nth-of-type(2)>span {
+    letter-spacing: 0.07rem;
+  }
+
+  footer>div:nth-of-type(2)>span:nth-child(2) {
+    padding-top: 0;
+  }
+
+  footer>div.address {
+    padding: 0.5rem 28px;
+    flex-direction: column;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+  }
+
+  footer>div.sm-icons {
+    display: none;
+  }
+
+  .socialmedia-sidebar {
+    display: block;
+    position: fixed;
+    top: 70%;
+    left: 1vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    z-index: 500;
+  }
+
+  .socialmedia-sidebar li {
+    position: relative;
+  }
+
+  /* A little gap before FB icon */
+  .socialmedia-sidebar li:nth-child(4) {
+    padding-top: 0.5rem;
+  }
+
+  .socialmedia-sidebar img {
+    width: calc(25% + 0.5vw);
+    height: calc(25% + 0.5vw);
+    padding-top: 0.3rem;
+    cursor: pointer;
+  }
+
+  .socialmedia-sidebar li[contact-descr]:hover::after,
+  .socialmedia-sidebar li[contact-descr]:focus::after {
+    font-family: 'Lato', sans-serif;
+    content: attr(contact-descr);
+    position: absolute;
+    left: 25px;
+    top: 0.2rem;
+    width: max-content;
+    border-radius: 0.2rem;
+    background-color: #757575;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.75rem;
+    z-index: 6;
+  }
+
+  content {
+    /* margin: 1rem; */
+    min-width: 80vw;
+    min-height: 90vh;
+    padding: 7rem 0 0;
+    font-size: calc(12px + 0.5vw);
+  }
+
+  content iframe {
+    padding: 2rem 0 0;
+    width: 100%;
+    height: 800px;
+  }
+
+  content article.narrow {
+    width: 50vw;
+    margin: 0 auto;
+  }
+
+  article p {
+    line-height: 1.6rem;
+    padding: 0.5rem 0;
+  }
+}

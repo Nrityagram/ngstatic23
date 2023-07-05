@@ -1,0 +1,107 @@
+/* @import url("normalize.css"); */
+
+content {
+    grid-area: content;
+    /* padding: 1.5rem 1.2rem; */
+    font-size: calc(16px + 0.5vw);
+    padding: 1rem 0;
+}
+
+content p {
+    padding: 0.2rem 0 0.5rem;
+}
+
+cardwrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+cardpanel {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+card {
+    padding: 1rem 2rem;
+}
+
+card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+desc.bio {
+    padding: 0;
+}
+
+/* common-desc.bio {
+    padding: 0 1rem;
+} */
+
+photowrapper {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px dashed orange; */
+}
+
+picture img {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+photo-caption {
+    align-self: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: calc(12px + 0.5vw);
+    font-weight: 400;
+}
+
+/* ngtitle {
+    color: #df0f1c;
+    font-size: calc(20px + 0.75vw);
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding: 0.5rem 0 0;
+    display: flex;
+    justify-content: center;
+} */
+
+.board-wrap {
+    flex-wrap: wrap;
+}
+
+.bio {
+    display: none;
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 769px) {
+    content {
+        font-size: calc(12px + 0.5vw);
+    }
+
+    content p {
+        padding: 0.2rem 0 0.3rem;
+    }
+
+    cardwrapper {
+        align-items: stretch;
+        max-width: 85vw;
+    }
+
+    cardwrapper.managers {
+        margin: 1rem 25vw 0.5rem;
+    }
+
+    card {
+        padding: 0.5rem 1rem;
+    }
+
+    common-desc.bio {
+        padding: 0 1rem;
+    }
+}
