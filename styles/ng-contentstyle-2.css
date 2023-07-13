@@ -67,6 +67,11 @@ content .heading3 {
     font-weight: 500;
 }
 
+content .photowrapper {
+    display: flex;
+    justify-content: center;
+}
+
 content .photowrapper img {
     width: 100vw;
     padding: 1rem 0 0;
@@ -81,6 +86,7 @@ content .photowrapper.quarter-width img {
 @media screen and (min-width: 600px) {
     content .photowrapper.quarter-width img {
         width: 25vw;
+        
         padding: 1rem 0 0;
     }
 }
