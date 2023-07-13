@@ -72,6 +72,19 @@ content .photowrapper img {
     padding: 1rem 0 0;
 }
 
+content .photowrapper.quarter-width img {
+    width: 50vw;
+    padding: 1rem 0 0;
+}
+
+/* ipad and above */
+@media screen and (min-width: 600px) {
+    content .photowrapper.quarter-width img {
+        width: 25vw;
+        padding: 1rem 0 0;
+    }
+}
+
 content .sliderwrapper {
     padding: 0.1rem 0 1rem;
     max-width: 100vw;
