@@ -13,16 +13,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="India’s first modern Gurukul, Nrityagram is a one-of-a-kind community
-    where dance is a way of life.">
-    <title>Nrityagram Dance Village, India</title>
+    <meta name="description" content="Creating a community of Indian Classical Dancers that fosters mutual growth and solidarity.">
+    <title>Dance Commons | Nrityagram Dance Village, India</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://res.cloudinary.com">
     
-    <link rel="stylesheet" href="/styles/ng-page.min.css" />
+     <link rel="stylesheet" href="/styles/ng-page.min.css" />
     <link rel="stylesheet" href="/styles/ng-navbar.min.css" />
-    <link rel="stylesheet" href="/styles/ng-homestyle.min.css" />
+    <link rel="stylesheet" href="/styles/ng-contentstyle-2.min.css" />
     <link rel="shortcut icon" href="/img/logo/ng_logo-favicon.png" />
+    <script src="/scripts/jquery-3.4.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -431,7 +431,7 @@
               </ul>
             </div>
           </div>
-          <div class="item" onmouseover="showSubmenu(this);">
+          <div class="item" onmouseover="hideAllSubmenus();">
            <a href="press.html">Press</a>
           </div>
           <div class="item" onmouseover="showSubmenu(this);">
@@ -526,27 +526,211 @@
     </header>
 
     <div class="container" onmouseover="hideAllSubmenus();">
-      <div id="fadeslider">
-        <div class="slider">
-          <div id="slide1" class="slide"></div>
-          <div id="slide2" class="slide"></div>
-          <div id="slide3" class="slide"></div>
-          <div id="slide4" class="slide"></div>
-          <div id="slide5" class="slide"></div>
-          <div id="slide6" class="slide"></div>
-          <div id="slide7" class="slide"></div>
-          <div id="slide8" class="slide"></div>
-          <div id="slide9" class="slide"></div>
-          <div id="slide10" class="slide"></div>
+
+      <div id="masthead">
+        <picture>
+          <source srcset="https://res.cloudinary.com/nrityagram/image/upload/v1689234085/dancecommons-desk_u2er8f.png"
+          media="(min-width: 768px)">
+          <source srcset="https://res.cloudinary.com/nrityagram/image/upload/v1689234113/ipad/dancecommons-ipad_on8uj1.png"
+          media="(min-width: 425px)">
+          <img src="https://res.cloudinary.com/nrityagram/image/upload/v1689234209/mobile/dancecommons-mobile_c45p49.png" class="masthead-background-img"/>
+        </picture>
+        <div id="masthead-text" class="animated fadeInDown slower">
+          Dance<br />Commons
         </div>
       </div>
-      <!-- <small style="font-family: 'Lato', sans-serif; font-size: 0.8rem; font-weight: 200; color: rgba(255,255,255,0.5); position: fixed; bottom: 40px; left: 32vw; z-index: 501;">India’s first modern Gurukul, Nrityagram is a one-of-a-kind community
-        where dance is a way of life</small> -->
-      <div class="announce_box" onclick="location.href='dancecommons.html';">
-        <!-- <div class="announce_line1">I just watched</div> -->
-        <div class="announce_line2">Dance Commons</div>
-        <!-- <div class="announce_line1">at</div> -->
-        <!-- <img src="/img/social/met_logo_white.svg" alt=""> -->
+
+      <content>
+        <article>
+          <p>
+            Whoever speaks of art, speaks of how it is a universal language. Art breaks barriers, communicates across boundaries,
+            and can unite hearts and souls.
+          </p>
+          <p>
+            It is with such a spirit of universality, we wish to invite young dancers to discover the magic of a community for
+            Indian classical dance. As a young dancer, have you wished for a community who understands you, with whom you can share
+            learning and together chart your artistic journey? Along with sharing resources and knowledge, a community is also a
+            space for support and solidarity.
+          </p>
+          <p>
+            Can we together imagine such a Dance Commons?
+          </p>
+          <p>
+            The future lies with the youth and that’s why we would like to begin these conversations with young dancers, to engage,
+            participate, and interrogate this idea of an artistic community in today’s landscape through dialogue. This is just the
+            first step in what we envisage as an intergenerational effort, with younger dancers and stalwarts, to build a robust and
+            vibrant community for Indian classical dance.
+          </p>
+          <p>
+            We invite young classical Indian dancers for a dialogue on August 19th and 20th to ideate and shape what a community for
+            Indian classical dance could be.
+          </p>
+          <p>
+            Dance Commons is not a dance workshop. It is an event for young dancers to meet each other and imagine what a community
+            for and of Indian classical dance could be.
+          </p>
+          <p>
+            Some questions we will explore together:
+            <br />
+            How can we create a community of Indian classical dancers to foster mutual growth and solidarity?
+            <br />
+            What specific issues can we bring to the table that the community can address together?
+            <br />
+            How do we share knowledge and resources to strengthen our artistic practice and futures?
+          </p>
+          <p>
+            This, we believe, will encourage us to be stronger as a group and more resilient as dancers.
+          </p>
+          <p>
+            As a young dancer, you can meet other like-minded passionate dancers and be part of shaping a community that will
+            benefit young dancers everywhere.
+          </p>
+          <p>
+            Join us to embrace and extend this idea of space and community.
+          </p>
+          <p>
+            19 & 20 August, 2023
+            <br />
+            At Nrityagram, Hessaraghatta, Bangalore
+          </p>
+          </article>
+          <article>
+            <iframe src="https://drive.google.com/file/d/1CBEHDiR2K9hJU1NE8O6zed0vPQCZTxYC/preview"
+                    width="100%"
+                    height="800"
+                    </iframe>
+          </article>
+          <!-- <article>
+            <iframe src="https://res.cloudinary.com/nrityagram/image/upload/v1689236666/Dance_Commons_Registration_Info.pdf" height="800" width="100%"></iframe>
+          </article> -->
+      </content>
+      <footer>
+        <div class="center">
+          India’s first modern Gurukul, Nrityagram is a one-of-a-kind community
+          where dance is a way of life
+        </div>
+        <div>
+          <span>
+            <a href="mailto:info@nrityagram.org" target="_blank"><img src="/img/social/envelope-regular.svg" style="width: 0.8rem; height: 0.8rem;" alt="https://fontawesome.com/license"> info@nrityagram.org</a>
+          </span>
+          <span><a href="tel:+918028466312"><img src="/img/social/phone-alt-solid.svg" style="width: 0.8rem; height: 0.8rem;" alt="https://fontawesome.com/license"> +91 80 28466312 / 3 / 4</a></span>
+        </div>
+        <div class="address">
+          <p>
+            Nrityagram, Hessaraghatta Post, Kodihalli Village, Bangalore 560088
+          </p>
+          <p>
+            <span>
+              <b>VISIT</b> 10am - 2pm | Friday, Saturday and Sunday
+            </span>
+          </p>
+          <p>
+            <b>CLOSED</b> Mondays, National, State and other School Holidays | Call to Confirm
+          </p>
+        </div>
+
+        <div class="copyright-credits">
+          <div class="is-desk">
+            <p>
+              <a href="privacypolicy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="termsconditions.html">Terms & Conditions</a> &nbsp;|&nbsp; <a href="sitecredits.html">Site Credits</a>
+            </p>
+            <p>
+              © 2023 Nrityagram &nbsp;|&nbsp; All Rights Reserved
+            </p>
+          </div>
+          <div class="is-mobile">
+            <p>
+              <a href="privacypolicy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="termsconditions.html">Terms & Conditions</a> &nbsp;|&nbsp; <a href="sitecredits.html">Site Credits</a>
+            </p>
+            <p>
+              © 2023 Nrityagram &nbsp;|&nbsp; All Rights Reserved
+            </p>
+          </div>
+        </div>
+
+        <div class="sm-icons">
+          <a href="https://calendar.google.com/calendar/embed?src=nrityagram.org_qbkn1gon81ldld7ktpk0afr3pk%40group.calendar.google.com&ctz=Asia%2FKolkata" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/calendar_iac3da.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+          <!-- <a href="#" target="_blank">
+            <img src="img/social/blog.png" alt="" class="icon-img" loading="lazy" />
+          </a> -->
+          <a href="https://www.facebook.com/nrityagram/" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/facebook_spxum4.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+          <a href="https://www.instagram.com/nrityagram/" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/instagram_fehlgm.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+          <a href="https://www.youtube.com/user/Nrityagram" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/youtube_dxvsxz.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+        </div>
+
+        <div class="copyright-credits smaller">
+          <div class="is-desk">
+            <p>
+              Nrityagram is a Project of Odissi Dance Centre, a Public Charitable Trust &nbsp;|&nbsp; Registration # E 7242 MUMBAI dated 23/07/1979
+            </p>
+          </div>
+          <div class="is-mobile">
+            <p>
+              Nrityagram is a Project of Odissi Dance Centre, a Public Charitable Trust &nbsp;|&nbsp; Registration # E 7242 MUMBAI dated 23/07/1979
+            </p>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+
+    <div class="pop-modal">
+      <div class="pop-overlay" id="hide-donate-box">&nbsp;</div>
+      <div class="pop-box">
+        <div class="xbutton" id="hide-x">&#215;</div>
+        <div id="passport">
+          <p>Select one</p>
+          <div class="payment-choice-list">
+            <div class="payment-choice">
+              <input type="radio" value="india" name="nationality" class="show-input" id="india">
+              <label for="india">Citizen of India</label>
+            </div>
+            <div class="payment-choice">
+              <input type="radio" value="notindia" name="nationality" class="show-input" id="notindia">
+              <label for="notindia">Citizen of another country</label>
+            </div>
+          </div> 
+        </div>     
+
+        <button class="razorpay-button hide" id="make-donation">
+          <div class="razorpay-embed-btn" data-url="https://rzp.io/l/nrityagramcovidfund" data-text="Support Us Now" data-color="#ED211C" data-size="large">
+            <script>
+              (function(){
+                var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+                if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+                s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+                rzp && rzp.init && rzp.init()}})();
+            </script>
+          </div>                            
+        </button>
       </div>
     </div>
 
@@ -589,18 +773,17 @@
     </ul>
 
     <!-- partial -->
-    <script src="/scripts/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-    
-    <!-- <script type="text/javascript">
-      var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-      {widgetcode:"2f92f6eb9618197935112e11f9af1bf6c173ded5caac9656d48a507e4dfc702df50a20122a3da2424b59bd51f233d02f", values:{},ready:function(){}};
-      var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-      s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
-    </script> -->
-
-    <script src="/scripts/slick-slider-home.js"></script>
+    <script>
+      var razorbuttonID = "make-donation";
+      // var pentacle_pdf_url = { 
+      //   "make-donation": "https://drive.google.com/file/d/1bSNWpG07fb6eIuAztjHFloIXhqa5bMaN/view?usp=sharing" 
+      // };
+      var pentacle_pdf_url = { 
+        "make-donation": "https://res.cloudinary.com/nrityagram/image/upload/v1594970302/donationpdfs/Donate_quqwyv.pdf" 
+      };
+    </script>
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/donate-responsive.js"></script>
+    
   </body>
 </html>

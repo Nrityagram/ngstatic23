@@ -38,19 +38,24 @@ header {
     .announce_box {
         cursor: pointer;
 
-        min-width: 30vw;
-        min-height: 30vw;
+        /* min-width: 30vw;
+        min-height: 30vw; */
+        width: max-content;
+        height: max-content;
 
         position: fixed;
-        bottom: 30px;
-        right: 15px;
+        /* bottom: 20px; */
+        bottom: 7%;
+        /* right: 15px; */
+        left: 50%;
+        transform: translateX(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         border: 0.01rem solid var(--offwhite);
         color: white;
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 0 0 0.2rem;
+        /* padding: 0 0 0.2rem; */
     }
 
     .announce_box img {
@@ -60,10 +65,12 @@ header {
     }
 
     .announce_line1 {
+        padding: 1.25rem;
         font-size: 0.9rem;
     }
 
     .announce_line2 {
+        padding: 1.25rem;
         font-size: 1.6rem;
     }
 }
@@ -81,19 +88,24 @@ header {
     .announce_box {
         cursor: pointer;
 
-        min-width: 30vw;
-        min-height: 30vw;
+        /* min-width: 30vw;
+        min-height: 30vw; */
+        width: max-content;
+        height: max-content;
 
         position: fixed;
-        bottom: 105px;
-        right: 15px;
+        /* bottom: 105px; */
+        bottom: 7%;
+        /* right: 15px; */
+            left: 50%;
+            transform: translateX(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         border: 0.01rem solid var(--offwhite);
         color: white;
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 0 0 0.2rem;
+        /* padding: 0 0 0.2rem; */
     }
 
     .announce_box img {
@@ -103,10 +115,12 @@ header {
     }
 
     .announce_line1 {
+        padding: 1.25rem;
         font-size: 1.5rem;
     }
 
     .announce_line2 {
+        padding: 1.25rem;
         font-size: 2.2rem;
     }
 }
@@ -124,8 +138,10 @@ header {
     .announce_box {
         cursor: pointer;
 
-        min-width: 5vw;
-        min-height: 5vw;
+    /* min-width: 30vw;
+            min-height: 30vw; */
+        width: max-content;
+        height: max-content;
 
         position: fixed;
         bottom: 40px;
@@ -136,7 +152,7 @@ header {
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 0 0.7rem 0.4rem 0.7rem;
+        /* padding: 0 0.7rem 0.4rem 0.7rem; */ 
     }
 
     .announce_box img {
@@ -146,10 +162,12 @@ header {
     }
 
     .announce_line1 {
+        padding: 1.25rem;
         font-size: 1.1rem;
     }
 
     .announce_line2 {
+        padding: 1.25rem;
         font-size: 1.8rem;
     }
 
