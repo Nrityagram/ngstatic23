@@ -20,7 +20,7 @@ content pullquote {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    padding: 0 1.25rem;
+    padding: 1rem 1.25rem;
 }
 
 pullquote span {
@@ -76,7 +76,7 @@ content a.discreet {
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
-        margin-right: 2rem;
+        margin-right: 2.5rem;
         padding: 0;
     }
 
@@ -103,5 +103,29 @@ content a.discreet {
         font-size: calc(11px + 0.5vw);
         color: var(--ng-info-grey);
         padding: 0.3rem 0 0.5rem;
+    }
+}
+
+content .photowrapper {
+    display: flex;
+    justify-content: center;
+}
+
+content .photowrapper img {
+    width: 100vw;
+    padding: 1rem 0 0;
+}
+
+content .photowrapper.quarter-width img {
+    width: 50vw;
+    padding: 1rem 0 0;
+}
+
+/* ipad and above */
+@media screen and (min-width: 600px) {
+    content .photowrapper.quarter-width img {
+        width: 25vw;
+
+        padding: 1rem 0 0;
     }
 }
