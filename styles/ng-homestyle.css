@@ -42,11 +42,72 @@ header {
         min-height: 30vw; */
         width: max-content;
         /* height: max-content; */
-        height: 15dvh;
+        height: 10dvh;
 
         position: fixed;
         /* bottom: 20px; */
-        bottom: 7%;
+        bottom: 5%;
+        /* right: 15px; */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 0.01rem solid var(--offwhite);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* padding: 0 0 0.2rem; */
+    }
+
+    .announce_box.row-axis {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .announce_box img {
+        height: 100%;
+        width: auto;
+        /* align-self: center; */
+        /* padding-top: 0.15rem; */
+        /* width: 40%; */
+    }
+
+    .announce_line1 {
+        padding: 1.25rem;
+        font-size: 0.9rem;
+    }
+
+    .announce_line2 {
+        /* padding: 1.25rem; */
+        white-space: nowrap;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* iPad Media Query */
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .slide {
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        height: 97vh;
+    }
+
+    .announce_box {
+        cursor: pointer;
+
+        /* min-width: 30vw;
+        min-height: 30vw; */
+        width: max-content;
+        /* height: max-content; */
+        height: 9dvh;
+
+        position: fixed;
+        /* bottom: 105px; */
+        bottom: 5%;
         /* right: 15px; */
         left: 50%;
         transform: translateX(-50%);
@@ -69,66 +130,6 @@ header {
         height: 100%;
         width: auto;
         /* align-self: center; */
-        /* padding-top: 0.15rem; */
-        /* width: 40%; */
-    }
-
-    .announce_line1 {
-        padding: 1.25rem;
-        font-size: 0.9rem;
-    }
-
-    .announce_line2 {
-        /* padding: 1.25rem; */
-        padding: 0 0.5rem;
-        font-size: 1.25rem;
-    }
-}
-
-/* iPad Media Query */
-@media screen and (max-width: 768px) and (min-width: 600px) {
-    .slide {
-        position: fixed;
-        left: 0;
-        top: 0;
-        opacity: 0;
-        height: 97vh;
-    }
-
-    .announce_box {
-        cursor: pointer;
-
-        /* min-width: 30vw;
-        min-height: 30vw; */
-        width: max-content;
-        /* height: max-content; */
-        height: 15dvh;
-
-        position: fixed;
-        /* bottom: 105px; */
-        bottom: 7%;
-        /* right: 15px; */
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        border: 0.01rem solid var(--offwhite);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        /* padding: 0 0 0.2rem; */
-    }
-
-        .announce_box.row-axis {
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-
-    .announce_box img {
-        height: 100%;
-        width: auto;
-        /* align-self: center; */
         /* padding-top: 0.2rem; */
         /* width: 50%; */
     }
@@ -140,8 +141,9 @@ header {
 
     .announce_line2 {
         /* padding: 1.25rem; */
-        padding: 0 1rem;
-        font-size: 1.8rem;
+        white-space: nowrap;
+        padding: 0 0.9rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -162,7 +164,7 @@ header {
             min-height: 30vw; */
         /* width: max-content; */
         /* height: max-content; */
-        height: 15vh;
+        height: 12vh;
 
         position: fixed;
         bottom: 40px;
@@ -196,6 +198,7 @@ header {
     }
 
     .announce_line2 {
+        white-space: nowrap;
         padding: 0 1rem;
         font-size: 1.8rem;
     }
