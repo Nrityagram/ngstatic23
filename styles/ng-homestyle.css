@@ -41,8 +41,8 @@ header {
         /* min-width: 30vw;
         min-height: 30vw; */
         width: max-content;
-        /* height: max-content; */
-        height: 10dvh;
+        height: max-content;
+        /* height: 10dvh; */
 
         position: fixed;
         /* bottom: 20px; */
@@ -68,6 +68,7 @@ header {
     .announce_box img {
         height: 100%;
         width: auto;
+        max-height: 10dvh;
         /* align-self: center; */
         /* padding-top: 0.15rem; */
         /* width: 40%; */
