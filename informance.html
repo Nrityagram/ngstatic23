@@ -13,18 +13,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="India’s first modern Gurukul, Nrityagram is a one-of-a-kind community
-    where dance is a way of life.">
-    <title>Nrityagram Dance Village, India</title>
+    <meta name="description" content="Fun and interesting activities to do in Nrityagram. India’s first modern Gurukul, Nrityagram is a one-of-a-kind community where dance is a way of life.">
+    <title>Informance | Nrityagram Dance Village, India</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://res.cloudinary.com">
     
-    <link rel="stylesheet" href="/styles/ng-page.min.css" />
+     <link rel="stylesheet" href="/styles/ng-page.min.css" />
     <link rel="stylesheet" href="/styles/ng-navbar.min.css" />
-    <link rel="stylesheet" href="/styles/ng-homestyle.css" />
+    <link rel="stylesheet" href="/styles/ng-contentstyle-2.min.css" />
     <link rel="stylesheet"
           href="/styles/ng-a-img-pointer-events.css">
     <link rel="shortcut icon" href="/img/logo/ng_logo-favicon.png" />
+    <script src="/scripts/jquery-3.4.1.min.js"></script>
   </head>
   <body>
     <header>
@@ -433,7 +433,7 @@
               </ul>
             </div>
           </div>
-          <div class="item" onmouseover="showSubmenu(this);">
+          <div class="item" onmouseover="hideAllSubmenus();">
            <a href="press.html">Press</a>
           </div>
           <div class="item" onmouseover="showSubmenu(this);">
@@ -528,30 +528,142 @@
     </header>
 
     <div class="container" onmouseover="hideAllSubmenus();">
-      <div id="fadeslider">
-        <div class="slider">
-          <div id="slide1" class="slide"></div>
-          <div id="slide2" class="slide"></div>
-          <div id="slide3" class="slide"></div>
-          <div id="slide4" class="slide"></div>
-          <div id="slide5" class="slide"></div>
-          <div id="slide6" class="slide"></div>
-          <div id="slide7" class="slide"></div>
-          <div id="slide8" class="slide"></div>
-          <div id="slide9" class="slide"></div>
-          <div id="slide10" class="slide"></div>
+
+      <div id="masthead">
+        <picture>
+          <source srcset="https://res.cloudinary.com/nrityagram/image/upload/v1697810410/informance_desk_xbvpmk.png"
+          media="(min-width: 768px)">
+          <source srcset="https://res.cloudinary.com/nrityagram/image/upload/v1697810409/informance_tab_bbmewx.png"
+          media="(min-width: 425px)">
+          <img src="https://res.cloudinary.com/nrityagram/image/upload/v1697810408/informance_mobile_ewykkc.png" class="masthead-background-img"/>
+        </picture>
+        <div id="masthead-text" class="animated fadeInDown slower">
+          Informance
         </div>
       </div>
-      <!-- <small style="font-family: 'Lato', sans-serif; font-size: 0.8rem; font-weight: 200; color: rgba(255,255,255,0.5); position: fixed; bottom: 40px; left: 32vw; z-index: 501;">India’s first modern Gurukul, Nrityagram is a one-of-a-kind community
-        where dance is a way of life</small> -->
-      <div class="announce_box row-axis" onclick="location.href='informance.html';">
-        <img src="https://res.cloudinary.com/nrityagram/image/upload/v1697806848/informance_cta_thumbnail_xpxpiz.png" alt="Informance Thumbnail">
+
+      <content>
+        <article>
+          <div class="ngtitle center-txt" style="padding-bottom: 5px;">
+            Nrityagram Dance Informance
+          </div>
+          <div class="heading3 center closer-to-top">
+            INFORMAL | INFORMATIVE | PERFORMANCE
+          </div>
+          <br />
+          <p style="text-align:center; line-height:2; font-size:1.2em;">
+            Come by yourself or in a group<br />
+            Take a Guided Tour of our Beautiful Campus<br />
+            Watch an Informance by our Renowned Performers<br />
+            Disover the richness of our Dance heritage<br />
+            Have a Nrityagram Experience!
+          </p>
+          <br />
+          <p style="text-align:center;">
+            Select Weekends 11AM - 1PM<br />
+            ₹1500 per person<br />
+            Advance Booking and Payment: <a href="mailto:mamata@nrityagram.org"
+               class="bodytxt">mamata@nrityagram.org</a>
+          </p>
+        </article>
+
+      </content>
+      <footer>
+        <div class="center">
+          India’s first modern Gurukul, Nrityagram is a one-of-a-kind community
+          where dance is a way of life
+        </div>
         <div>
-          <div class="announce_line1">Nrityagram Dance Informance</div>
-          <div class="announce_line2">19 Nov 2023 - 16 Dec 2023</div>
-          <div class="announce_line2">Book Now!</div>
+          <span>
+            <a href="mailto:info@nrityagram.org" target="_blank"><img src="/img/social/envelope-regular.svg" style="width: 0.8rem; height: 0.8rem;" alt="https://fontawesome.com/license"> info@nrityagram.org</a>
+          </span>
+          <span><a href="tel:+918028466312"><img src="/img/social/phone-alt-solid.svg" style="width: 0.8rem; height: 0.8rem;" alt="https://fontawesome.com/license"> +91 80 28466312 / 3 / 4</a></span>
         </div>
-      </div>
+        <div class="address">
+          <p>
+            Nrityagram, Hessaraghatta Post, Kodihalli Village, Bangalore 560088
+          </p>
+          <p>
+            <span>
+              <b>VISIT</b> 10am - 2pm | Friday, Saturday and Sunday
+            </span>
+          </p>
+          <p>
+            <b>CLOSED</b> Mondays, National, State and other School Holidays | Call to Confirm
+          </p>
+        </div>
+
+        <div class="copyright-credits">
+          <div class="is-desk">
+            <p>
+              <a href="privacypolicy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="termsconditions.html">Terms & Conditions</a> &nbsp;|&nbsp; <a href="sitecredits.html">Site Credits</a>
+            </p>
+            <p>
+              © 2023 Nrityagram &nbsp;|&nbsp; All Rights Reserved
+            </p>
+          </div>
+          <div class="is-mobile">
+            <p>
+              <a href="privacypolicy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="termsconditions.html">Terms & Conditions</a> &nbsp;|&nbsp; <a href="sitecredits.html">Site Credits</a>
+            </p>
+            <p>
+              © 2023 Nrityagram &nbsp;|&nbsp; All Rights Reserved
+            </p>
+          </div>
+        </div>
+
+        <div class="sm-icons">
+          <a href="https://calendar.google.com/calendar/embed?src=nrityagram.org_qbkn1gon81ldld7ktpk0afr3pk%40group.calendar.google.com&ctz=Asia%2FKolkata" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/calendar_iac3da.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+          <!-- <a href="#" target="_blank">
+            <img src="img/social/blog.png" alt="" class="icon-img" loading="lazy" />
+          </a> -->
+          <a href="https://www.facebook.com/nrityagram/" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/facebook_spxum4.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+          <a href="https://www.instagram.com/nrityagram/" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/instagram_fehlgm.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+          <a href="https://www.youtube.com/user/Nrityagram" target="_blank">
+            <img
+              src="https://res.cloudinary.com/nrityagram/image/upload/v1581001999/mobile/youtube_dxvsxz.png"
+              alt=""
+              class="icon-img"
+              loading="lazy"
+            />
+          </a>
+        </div>
+
+        <div class="copyright-credits smaller">
+          <div class="is-desk">
+            <p>
+              Nrityagram is a Project of Odissi Dance Centre, a Public Charitable Trust &nbsp;|&nbsp; Registration # E 7242 MUMBAI dated 23/07/1979
+            </p>
+          </div>
+          <div class="is-mobile">
+            <p>
+              Nrityagram is a Project of Odissi Dance Centre, a Public Charitable Trust &nbsp;|&nbsp; Registration # E 7242 MUMBAI dated 23/07/1979
+            </p>
+          </div>
+        </div>
+
+      </footer>
     </div>
 
     <ul class="socialmedia-sidebar">
@@ -593,18 +705,7 @@
     </ul>
 
     <!-- partial -->
-    <script src="/scripts/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-    
-    <!-- <script type="text/javascript">
-      var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq ||
-      {widgetcode:"2f92f6eb9618197935112e11f9af1bf6c173ded5caac9656d48a507e4dfc702df50a20122a3da2424b59bd51f233d02f", values:{},ready:function(){}};
-      var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;
-      s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");
-    </script> -->
-
-    <script src="/scripts/slick-slider-home.js"></script>
     <script src="/scripts/script.js"></script>
+    
   </body>
 </html>
