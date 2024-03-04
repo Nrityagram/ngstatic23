@@ -18,6 +18,10 @@
   margin-top: -0.18em;
 }
 
+.red-text {
+  color: var(--ng-red);
+}
+
 a.bodytxt {
   text-decoration: underline;
   text-decoration-color: var(--ng-very-light-grey);
@@ -29,7 +33,7 @@ a.bodytxt {
   color: var(--body-text-color);
   background-color: #fff;
   display: grid;
-  grid-template-areas: "content""footer";
+  grid-template-areas: "content" "footer";
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
   /* Adding height and overflow will stop 
