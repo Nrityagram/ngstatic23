@@ -1,0 +1,128 @@
+/* adding CTA box for inner page */
+/* Desktop Media Query */
+@media screen and (min-width: 769px) {
+    .announce_box {
+        cursor: pointer;
+        height: 12vh;
+
+        position: absolute;
+        top: 62vh;
+        right: 4.5vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 0.01rem solid var(--offwhite);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .announce_box.row-axis {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .announce_box img {
+        height: 100%;
+        width: auto;
+    }
+
+    .announce_line1 {
+        padding: 0 0.7rem;
+        font-size: 1.75rem;
+    }
+
+    .announce_line2 {
+        white-space: nowrap;
+        padding: 0.2rem 1rem 0;
+        font-size: 1rem;
+    }
+}
+
+/* iPad Media Query */
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .announce_box {
+        cursor: pointer;
+
+        width: max-content;
+        height: 9dvh;
+
+        position: absolute;
+        top: 67vh;
+        right: 4.75vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 0.01rem solid var(--offwhite);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        /* padding: 0 0 0.2rem; */
+    }
+
+    .announce_box.row-axis {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .announce_box img {
+        height: 100%;
+        width: auto;
+        /* align-self: center; */
+        /* padding-top: 0.2rem; */
+        /* width: 50%; */
+    }
+
+    .announce_line1 {
+        padding: 0 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    .announce_line2 {
+        white-space: nowrap;
+        padding: 0.2rem 1rem 0;
+        font-size: 0.8rem;
+    }
+
+}
+
+/* iPhone Media Query */
+@media screen and (max-width: 599px) {
+    .announce_box {
+        cursor: pointer;
+        width: max-content;
+        height: max-content;
+
+        position: absolute;
+        top: 67vh;
+        right: 5.5vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 0.01rem solid var(--offwhite);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .announce_box.row-axis {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .announce_box img {
+        height: 10vh;
+        width: auto;
+    }
+
+    .announce_line1 {
+        padding: 0 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .announce_line2 {
+        white-space: nowrap;
+        padding: 0.2rem 1rem 0;
+        font-size: 0.8rem;
+    }
+}
